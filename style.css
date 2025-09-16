@@ -156,3 +156,8 @@ body {
 .temp {
     border: 3px solid black;
 }
+
+/* javascript styles */
+.focus {
+    border: 2px solid red;
+}
