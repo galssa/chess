@@ -77,27 +77,34 @@ function removeFocus(){
 }
 console.log(sqrs)
 
+function moves(){
+    for (const sqr of sqrs){
+        sqr.addEventListener('click',()=>{
+            
+        })
+    }
+}
 
 // // // // // // // // // // // // // // // // // // // // //
 // // // // // // // // // // // // // // // // // // // // //
 // // // // // // // // // // // // // // // // // // // // //
 // // // // // // // // // // // // // // // // // // // // //
 
-e2.addEventListener('click',()=>{
-    e3.classList.toggle('focus')
-    e4.classList.toggle('focus')
-})
-e3.addEventListener('click',()=>{
-    if(e3.classList.contains('focus')){
-        removeFocus();
-        e2.classList.remove('white-pawn');
-        e3.classList.add('white-pawn');
-    }
-})
-e4.addEventListener('click',()=>{
-    if(e4.classList.contains('focus')){
-        removeFocus();
-        e2.classList.remove('white-pawn');
-        e4.classList.add('white-pawn');
-    }
-})
+// e2.addEventListener('click',()=>{
+//     e3.classList.toggle('focus')
+//     e4.classList.toggle('focus')
+// })
+// e3.addEventListener('click',()=>{
+//     if(e3.classList.contains('focus')){
+//         removeFocus();
+//         e2.classList.remove('white-pawn');
+//         e3.classList.add('white-pawn');
+//     }
+// })
+// e4.addEventListener('click',()=>{
+//     if(e4.classList.contains('focus')){
+//         removeFocus();
+//         e2.classList.remove('white-pawn');
+//         e4.classList.add('white-pawn');
+//     }
+// })

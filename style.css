@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Homemade+Apple&family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Permanent+Marker&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+ES:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Homemade+Apple&family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Permanent+Marker&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+ES:wght@100..400&family=Quicksand:wght@300..700&display=swap'); */
 
 * {
     margin: 0;
@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'kalam';
+    font-family: arial, sans-serif;
 }
 
 .chess-board {
