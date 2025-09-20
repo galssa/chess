@@ -68,22 +68,56 @@ const sqrs = Array.from(whiteSqrs).concat(Array.from(blackSqrs))
 
 let piecesList = ['black-king', 'white-king', 'black-queen', 'white-queen', 'black-rook', 'white-rook', 'black-bishop', 'white-bishop', 'black-knight', 'white knight', 'black-pawn', 'white-pawn'];
 
+function toggleTurn() {
 
-function removeFocus(){
-    for(const sqr of sqrs){
-        
-        sqr.classList.remove('focus')
-    }
 }
-console.log(sqrs)
+//
+let turn = 'black'
+//
 
-function moves(){
-    for (const sqr of sqrs){
-        sqr.addEventListener('click',()=>{
-            
+function moves() {
+    for (const sqr of sqrs) {
+        sqr.addEventListener('click', () => {
+            if(sqr.classList.contains('focus') == false){
+                removeFocus()
+            }
+            let piece = sqr.classList.value.slice(sqr.classList.value.indexOf(' ')).trim().slice(sqr.classList.value.slice(sqr.classList.value.indexOf(' ')).trim().indexOf(' ')).trim();
+            let pieceName = piece.slice(6)
+            // console.log(piece)
+            if (piece.slice(0, piece.indexOf('-')) == turn) {
+                if (turn == 'black') {
+                    switch (pieceName) {
+                        case 'pawn':
+                            if(sqr.classList.value.slice(7,8) == '7'){
+                                let firstSqr = sqr.classList.value.slice(6,7) + (parseFloat(sqr.classList.value.slice(7,8)) - 1);
+                                let secondSqr = sqr.classList.value.slice(6,7) + (parseFloat(sqr.classList.value.slice(7,8)) - 2);
+                                eval(firstSqr).classList.add('focus');
+                                eval(secondSqr).classList.add('focus');
+                            }
+                            break;
+                    
+                        default:
+                            break;
+                    }
+                } else if (turn == 'white') {
+
+                }
+            }
+            // if(sqr.classList.contains('focus') && sqr.classList.value.slice(sqr.classList.value.indexOf('s')).slice(2, sqr.classList.value.slice(sqr.classList.value.indexOf('s')).indexOf('-')) == 'pawn'){
+                
+            // }
         })
     }
 }
+moves()
+function removeFocus() {
+    for (const sqr of sqrs) {
+
+        sqr.classList.remove('focus')
+    }
+}
+// console.log(sqrs)
+
 
 // // // // // // // // // // // // // // // // // // // // //
 // // // // // // // // // // // // // // // // // // // // //
