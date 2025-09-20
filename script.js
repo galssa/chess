@@ -1,3 +1,15 @@
+/*
+// Problem 1 // :By clicking on one of the black pawns, the sqrs should be focused in such a manner so that when we click on the focused sqr it will move the piece through which the focus was created.
+
+// solution  //: adding a class named with the sqr id together with the keyword "focus" then when we click the focused sqr, then bring the id of the sqr through which the focus was created and after that check what is the name of the piece on the sqr through which the foucs was created, so that we can add a class name of the piece in the clicked sqr.
+
+// Problem 2 //: removing the classes which are created by mixing the piece name from which the focus was created and the keyword "focus".
+
+
+*/
+
+
+
 const a1 = document.getElementById('a1');
 const a2 = document.getElementById('a2');
 const a3 = document.getElementById('a3');
@@ -112,7 +124,6 @@ function moves() {
 moves()
 function removeFocus() {
     for (const sqr of sqrs) {
-
         sqr.classList.remove('focus')
     }
 }
