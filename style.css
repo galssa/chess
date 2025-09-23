@@ -91,71 +91,67 @@ body {
 }
 
 /* Black Pieces */
-.black-king {
+.bk {
     background-image: url('images/black_king.png');
     background-size: contain;
 }
 
-.black-queen {
+.bq {
     background-image: url('images/black_queen.png');
     background-size: contain;
 }
 
-.black-rook {
+.br {
     background-image: url('images/black_rook.png');
     background-size: contain;
 }
 
-.black-bishop {
+.bb {
     background-image: url('images/black_bishop.png');
     background-size: contain;
 }
 
-.black-knight {
+.bn {
     background-image: url('images/black_knight.png');
     background-size: contain;
 }
 
-.black-pawn {
+.bp {
     background-image: url('images/black_pawn.png');
     background-size: contain;
 }
 
 /* White Pieces */
-.white-king {
+.wk{
     background-image: url('images/white_king.png');
     background-size: contain;
 }
 
-.white-queen {
+.wq {
     background-image: url('images/white_queen.png');
     background-size: contain;
 }
 
-.white-rook {
+.wr {
     background-image: url('images/white_rook.png');
     background-size: contain;
 }
 
-.white-bishop {
+.wb {
     background-image: url('images/white_bishop.png');
     background-size: contain;
 }
 
-.white-knight {
+.wn{
     background-image: url('images/white_knight.png');
     background-size: contain;
 }
 
-.white-pawn {
+.wp{
     background-image: url('images/white_pawn.png');
     background-size: contain;
 }
 
-
-.temp {
-    border: 3px solid black;
-}
 
 /* javascript styles */
 .focus {
