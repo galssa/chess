@@ -76,14 +76,14 @@ body {
 .first-row-name > div, .second-row-name > div {
     height: 55px;
 }
-.white {
+.w {
     background-color: rgb(241, 241, 253);
     width: 55px;
     height: 55px;
     /* border: 1px solid black; */
 }
 
-.black {
+.b {
     background-color: #5a7440;
     width: 55px;
     height: 55px;
