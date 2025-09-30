@@ -13,7 +13,9 @@ body {
     align-items: center;
     font-family: arial, sans-serif;
 }
-
+body::selection {
+    background-color: transparent;
+}
 .chess-board {
     display: grid;
     grid-template-columns: auto auto auto;
